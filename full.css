@@ -43,7 +43,6 @@ nav {
 }
 
 
-
 nav a {
     color: white;
     text-decoration: none;
@@ -54,13 +53,17 @@ nav a {
     transition: background-color 1s, transform 1s;
 }
 
-nav a.active {
-    background-color: #4F81BD;
-}
 
 nav a:hover {
     background-color: #4F81BD;
     transform: scale(1.05);
+}
+
+/* Highlight the current page */
+nav a.active {
+    background-color: #F7F9FC;
+    color: #0B1F33;
+    border: 2px solid #4F81BD;
 }
 
 article {
@@ -119,4 +122,46 @@ video {
     background-color: #0B1F33;
     border-radius: 10px;
     box-shadow: 5px 5px 8px #888888;
+}
+
+/* Contact form styling */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    padding: 12px;
+    border: 2px solid #D9E6F2;
+    border-radius: 8px;
+    background-color: white;
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    font-size: 15px;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #4F81BD;
+}
+
+/* Submit and Reset buttons */
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #1F4E79;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #4F81BD;
+}
+
+/* Hide hamburger menu on desktop */
+.menu-icon, .menu-toggle {
+    display: none;
 }

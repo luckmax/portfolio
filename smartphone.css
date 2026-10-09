@@ -69,19 +69,53 @@ h4, h5, h6, p, li {
     margin-right: 10px;
 }
 
-nav a {
+/* Mobile hamburger menu */
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: block;
+    color: white;
+    font-size: 32px;
+    text-align: right;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/* Navigation is hidden by default */
+.menu-links {
+    display: none;
+    margin: 10px;
+}
+
+/* Show navigation when checkbox is selected */
+.menu-toggle:checked + .menu-links {
+    display: block;
+}
+
+/* Mobile navigation buttons */
+.menu-links a {
     display: block;
     color: white;
     text-decoration: none;
-    padding: 8px;
-    margin-top: 5px;
     background-color: #1F4E79;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 8px;
 }
 
-nav a:hover {
+.menu-links a:hover {
     background-color: #4F81BD;
 }
 
+/* Highlight current page */
+.menu-links a.active {
+    background-color: #F7F9FC;
+    color: #0B1F33;
+}
+h
 footer a {
     color: white;
 }

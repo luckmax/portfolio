@@ -74,3 +74,8 @@ img {
 video {
     max-width: 90%;
 }
+
+/* Hide hamburger menu on tablets */
+.menu-icon, .menu-toggle {
+    display: none;
+}
