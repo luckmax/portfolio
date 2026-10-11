@@ -272,3 +272,39 @@ input[type="reset"]:hover {
 section.hero:hover {
     transform: none;
 }
+
+/* Circular photo on the About Me page */
+
+.about-photo {
+    float: right;
+    width: 170px;
+    height: 170px;
+    margin: 0px 0px 15px 25px;
+    padding: 6px;
+    background-color: #F7F9FC;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 5px 5px 8px #888888;
+}
+
+.about-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* About Me introduction video section */
+
+.video-section {
+    text-align: center;
+    padding: 25px;
+}
+
+.video-section h3 {
+    color: #1F4E79;
+    font-size: 24px;
+}
+
+.video-section p {
+    line-height: 1.6;
+}
