@@ -34,12 +34,12 @@
            id="menu-toggle"
            class="menu-toggle">
 
-    <h4 class="menu-links">
+    <div class="menu-links">
         <a href="index.html">Home</a>
         <a href="aboutme.html">About Me</a>
         <a href="project.html">Projects</a>
         <a href="contact.html" class="active">Contact Me</a>
-    </h4>
+    </div>
 
 </nav>
         </header>
@@ -93,10 +93,13 @@
                     <p>
                         <label for="phone">Cell No.:</label><br>
                         <input type="tel"
-                               id="phone"
-                               name="phone"
-                               size="20"
-                               required>
+                                id="phone"
+                                name="phone"
+                                size="20"
+                                pattern="[0-9]{10}"
+                                placeholder="4165551234"
+                                title="Enter a 10-digit phone number without spaces or dashes"
+                                required>
                     </p>
 
                     <p>
@@ -131,6 +134,36 @@
                     </a>
                 </p>
             </address>
+             <!-- Social media links -->
+<div class="social-links">
+
+    <a href="https://github.com/luckmax"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="GitHub profile">
+        <img src="images/github.svg" alt="GitHub">
+    </a>
+
+    <a href="https://www.linkedin.com/in/temesgen-teklebrhan-b6646b40b"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="LinkedIn profile">
+        <img src="images/linkedin.svg" alt="LinkedIn">
+    </a>
+
+    <a href="https://www.instagram.com/teme_max/"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Instagram profile">
+        <img src="images/instagram.svg" alt="Instagram">
+    </a>
+
+    <a href="mailto:temesgen.teklebrhan@ontariotechu.net"
+       aria-label="Send email">
+        <span class="email-icon">&#9993;</span>
+    </a>
+
+</div>
             <p>
             &copy; 2026 Temesgen Teklebrhan. All rights reserved.
         </p>

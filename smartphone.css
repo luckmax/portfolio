@@ -40,10 +40,15 @@ article {
     padding-bottom: 10px;
 }
 
+/* Smartphone section cards */
+
 section {
-    background-color: #D9E6F2;
+    background: linear-gradient(to right, #F7F9FC 0%, #D9E6F2 100%);
     margin: 10px;
-    padding: 10px;
+    padding: 15px;
+    border-radius: 12px;
+    border-left: 5px solid #4F81BD;
+    box-shadow: 3px 3px 6px #888888;
 }
 
 h1 {
@@ -88,6 +93,7 @@ h4, h5, h6, p, li {
 .menu-links {
     display: none;
     margin: 10px;
+    font-weight: bold;
 }
 
 /* Show navigation when checkbox is selected */
@@ -248,17 +254,22 @@ footer a {
     width: 140px;
     height: 140px;
     margin: 15px auto;
-    padding: 6px;
-    background-color: #F7F9FC;
+    padding: 0px;
+    border: 5px solid #4F81BD;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 5px 5px 8px #888888;
 }
 
+/* Make the About Me photo fill its circle on phones */
+
 .about-photo img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 25%;
+    border-radius: 50%;
 }
 
 /* Smartphone introduction video */
@@ -271,4 +282,47 @@ footer a {
 .video-section h3 {
     color: #1F4E79;
     font-size: 20px;
+}
+
+/* Smartphone footer styling */
+
+footer {
+    text-align: center;
+}
+
+footer address {
+    font-style: normal;
+}
+
+.social-links {
+    text-align: center;
+    margin: 15px 0px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0px 4px;
+    padding: 8px;
+    background-color: #F7F9FC;
+    border-radius: 50%;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.social-links img {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+.email-icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 24px;
+    color: #1F4E79;
+    text-align: center;
 }

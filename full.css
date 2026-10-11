@@ -51,6 +51,7 @@ nav a {
     margin-left: 8px;
     border-radius: 8px;
     transition: background-color 1s, transform 1s;
+    font-weight: bold;
 }
 
 
@@ -275,24 +276,29 @@ section.hero:hover {
 
 /* Circular photo on the About Me page */
 
+/* About Me circular portrait */
+
 .about-photo {
     float: right;
-    width: 170px;
-    height: 170px;
-    margin: 0px 0px 15px 25px;
-    padding: 6px;
+    width: 220px;
+    height: 220px;
+    margin: 0px 0px 15px 20px;
+    padding: 0px;
     background-color: #F7F9FC;
+    border: 5px solid #4F81BD;
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: 5px 5px 8px #888888;
+    box-shadow: 5px 5px 10px #888888;
 }
 
 .about-photo img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 25%;
+    border-radius: 50%;
 }
-
 /* About Me introduction video section */
 
 .video-section {
@@ -307,4 +313,49 @@ section.hero:hover {
 
 .video-section p {
     line-height: 1.6;
+}
+
+/* Footer social media icons */
+
+/* Footer styling */
+
+footer {
+    text-align: center;
+}
+
+footer address {
+    font-style: normal;
+}
+
+.social-links {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0px 8px;
+    padding: 10px;
+    background-color: #F7F9FC;
+    border-radius: 50%;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.social-links img {
+    display: block;
+    width: 28px;
+    height: 28px;
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+.email-icon {
+    display: block;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 28px;
+    color: #1F4E79;
+    text-align: center;
 }
