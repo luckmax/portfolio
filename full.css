@@ -28,8 +28,8 @@ body {
 header {
     background: linear-gradient(45deg, #0B1F33 0%, #1F4E79 65%, #4F81BD 100%);
     color: white;
-    padding-top: 25px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 header h1 {
@@ -38,8 +38,9 @@ header h1 {
 
 nav {
     text-align: right;
-    margin-top: 15px;
-    margin-right: 0px;
+    margin-top: 5px;
+    margin-right: 15px;
+    padding-bottom: 20px;
 }
 
 
@@ -358,4 +359,25 @@ footer address {
     font-size: 28px;
     color: #1F4E79;
     text-align: center;
+}
+
+/* Centered portfolio logo */
+
+.logo-heading {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Header logo image */
+
+.logo-heading img {
+    width: 100px;
+    height: auto;
+    padding: 0px;
+    background-color: transparent;
+    border-radius: 0px;
+    box-shadow: none;filter: brightness(0) invert(1);
+    transform: translateY(20px);
+
 }

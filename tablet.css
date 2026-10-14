@@ -224,9 +224,13 @@ nav a.active {
 }
 /* Align tablet navigation with desktop */
 
+/* Center navigation on tablets */
+
 nav {
-    text-align: right;
-    margin-right: 15px;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 0px;
+    
 }
 
 /* Tablet footer styling */
@@ -270,4 +274,21 @@ footer address {
     font-size: 28px;
     color: #1F4E79;
     text-align: center;
+}
+
+/* Tablet header logo */
+
+.logo-heading {
+    text-align: center;
+    margin: 0px;
+    padding: 10px;
+}
+
+.logo-heading img {
+    display: inline-block;
+    width: 100px;
+    height: auto;
+    border-radius: 0px;
+    box-shadow: none;
+    filter: brightness(0) invert(1);
 }

@@ -23,8 +23,8 @@ body {
 header {
     background: linear-gradient(to bottom, #0B1F33 0%, #1F4E79 100%);
     color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 footer {
@@ -325,4 +325,21 @@ footer address {
     font-size: 24px;
     color: #1F4E79;
     text-align: center;
+}
+
+/* Smartphone header logo */
+
+.logo-heading {
+    text-align: center;
+    margin: 0px;
+    padding:0px;
+}
+
+.logo-heading img {
+    display: inline-block;
+    width: 120px;
+    height: auto;
+    border-radius: 0px;
+    box-shadow: none;
+    filter: brightness(0) invert(1);
 }
